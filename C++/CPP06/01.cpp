@@ -39,10 +39,6 @@ public:
     }
 
 };
-
-
-
-
 int main(){
     SinhVien a;
     a.nhap();
