@@ -46,17 +46,9 @@ public:
         cout << mgv << " " << fullName << " " << cvField << " " << "\n";
     }
 };
-int cmp(GV p, GV q)
-{
-    if (p.name == q.name)
-    {
-        return p.intmgv < q.intmgv;
-    }
-    return p.name < q.name;
-}
 signed main()
 {
-    fastio int n;
+    fastio int n,q;
     cin >> n;
     cin.ignore();
     GV a[n + 5];
@@ -64,11 +56,16 @@ signed main()
     {
         a[i].input();
     }
-    sort(a + 1, a + n + 1, cmp);
-    for (int i = 1; i <= n; i++)
-    {
-        a[i].output();
+    cin>>q;
+    cin.ignore();
+    while(q--){
+        GV x;
+        getline(cin,x.field);
+        x.convert();
+        cout<<"DANH SACH GIANG VIEN BO MON "<<x.cvField<<":\n";
+        for(int i=1;i<=n;i++)
+            if(x.cvField==a[i].cvField)
+                a[i].output();
     }
-
     return 0;
 }

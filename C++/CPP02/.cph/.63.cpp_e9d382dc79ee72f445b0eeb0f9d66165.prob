@@ -1,0 +1,1 @@
+{"name":"Local: 63","url":"/Users/phamvantu/Desktop/code/Git_codeptit/Codeptit/C++/CPP02/63.cpp","tests":[{"id":1731756388650,"input":"4\n\n9 -2 -8 0\n\n-6 -2 0 -9\n\n4 -5 6 1\n\n1 3 4 9","output":"26"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/phamvantu/Desktop/code/Git_codeptit/Codeptit/C++/CPP02/63.cpp","group":"local","local":true}
